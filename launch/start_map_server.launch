@@ -1,0 +1,4 @@
+<launch>
+  <arg name="astar_map_file" default="$(find a_star)/assets/map_astar.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg astar_map_file)"/>
+</launch>

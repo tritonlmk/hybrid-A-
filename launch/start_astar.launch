@@ -1,0 +1,3 @@
+<launch>
+  <node name="astar_planner" type="a_star_node" pkg="a_star" output="screen"/>
+</launch>

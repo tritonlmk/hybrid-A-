@@ -1,0 +1,11 @@
+<launch>
+  <!-- start map server -->
+  <include file="$(find a_star)/launch/start_map_server.launch">
+    <arg name="astar_map_file" value="$(find a_star)/assets/map_astar.yaml"/>
+  </include>
+  <!-- start astar planning -->
+  <include file="$(find a_star)/launch/start_astar.launch">
+  </include>
+  <!-- start map proc to provide ros service needed -->
+  <include file="$(find map_proc)/launch/map_proc.launch"/>
+</launch>
